@@ -15,14 +15,14 @@ npm install --save solides_components_v3
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'solides_components_v3'
-import 'solides_components_v3/dist/index.css'
+import { MyComponent } from '@arthur-solides/solides-components-v3'
 
 class Example extends Component {
   render() {
     return <MyComponent />
   }
 }
+
 ```
 
 ## License

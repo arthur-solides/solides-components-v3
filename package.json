@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arthurespl/solides-components-v3.git"
+    "url": "git+https://github.com/arthur-solides/solides-components-v3.git"
   },
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -74,10 +74,13 @@
     "typescript": "^4.3.5"
   },
   "bugs": {
-    "url": "https://github.com/arthurespl/solides_components_v3/issues"
+    "url": "https://github.com/arthur-solides/solides_components_v3/issues"
   },
-  "homepage": "https://github.com/arthurespl/solides_components_v3#readme",
+  "homepage": "https://github.com/arthur-solides/solides_components_v3#readme",
   "directories": {
     "lib": "lib"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
