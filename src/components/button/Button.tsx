@@ -11,6 +11,10 @@ export interface ButtonProps  {
    */
   backgroundColor?: string;
   /**
+   * What background color to use
+   */
+   idName?: string;
+  /**
    * How large should the button be?
    */
   size?: "small" | "medium" | "large";
@@ -32,6 +36,7 @@ export interface ButtonProps  {
 const Button = ({
   primary = true,
   backgroundColor,
+  idName,
   size = "medium",
   onClick,
   label,
@@ -40,13 +45,14 @@ const Button = ({
     ? "storybook-button--primary"
     : "storybook-button--secondary";
   return (
-    <button
+    <button    
       type="button"
       className={["storybook-button", `storybook-button--${size}`, mode].join(
         " "
       )}
       style={backgroundColor ? { backgroundColor }: {}}
       onClick={onClick}
+      id={idName ? { idName }: {}}
     >
       {label}
     </button>
